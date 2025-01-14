@@ -1,0 +1,25 @@
+-- se connecter au serveur en ssh
+ssh <user>@<host_server>
+
+-- créer héberger votre projet sur github
+créer un repository en ligne (site_ecommerce)
+
+-- git clone de votre projet github sur votre serveur
+git clone <url_github>
+
+-- si votre site subis des évolutions
+git add -A
+git commit -m 'mes modifs'
+git push 
+(depuis votre repository local (depuis votre ordinateur))
+
+cd site_ecommerce
+git pull
+(depuis votre serveur)
+
+-- gérer la base de données
+exporter votre bdd (en local)
+importer le script sql sur votre bdd en ligne via phpmyadmin en ligne sur votre serveur
+
+-- lier votre projet site_ecommerce à votre nomn de domaine
+-- générer (ou  regénerer) le certificat SSL pour être en https
